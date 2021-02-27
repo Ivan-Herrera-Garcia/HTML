@@ -1,0 +1,46 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<!DOCTYPE html PUBLIC "_// WRC//DTD XHTML 1.0script//EN"
+"http:// www.w3.org/TR/xhtml1/DTD/xhtml-scrict.dtd">
+<html>
+<head><title>Mi pagina</title></head>
+<body>
+<script type=text/javascript>
+    var N=prompt("Selecciona una opcion<br/>"+"1-Comparar dos numeros<br/>"+"2-Tabla de Mult."+"<br/>"+"3-Sueldo<br/>"+"4-Mensaje de termino");
+    var NV=parseInt(N);
+   switch (parseInt(NV)) {
+       case NV=1:
+    var V1 = prompt("Teclea un numero");
+    var V2 = prompt("Teclea un otro nuemro");
+
+    if (parseInt(V1)>=parseInt(V2)) {
+        document.write("El numero mayor es "+ V1 + " y el menor es" + V2)
+    }
+    else {
+   
+    document.write("El numero mayor es "+ V2 + " y el menor es" + V1)
+    } break
+       case NV=2:
+            var N=prompt("Teclea un numero");
+    var NV=parseInt(N);
+    for(var I=1; I<11; I++) {
+    document.write(N+"x"+I+"="+(I*N)+"<br/>")
+    }   break
+       case NV=3:
+       var V1 = prompt("Teclea las horas de trabajadas");
+    var V2 = prompt("Teclea las faltas");
+    var V3 = prompt("Teclea las horas extras");
+    var HT=parseInt(V1)*85
+    var F=parseInt(V2)*90
+    var HE=parseInt(V3)*160
+    var ISR=((HT-F+HE)*0.16)
+    var T=HT-F+HE-ISR
+    document.write("Tu sueldo  es:"+T)
+   break
+   case NV=4:
+document.write("Pues termino")
+        break
+        default:
+        document.write("Que paso amigito?")}    
+    </script>
+</body>
+</html>
